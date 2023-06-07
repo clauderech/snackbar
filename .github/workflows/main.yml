@@ -17,4 +17,4 @@ jobs:
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
         localDir: "clauderech/snackbar"
-        remoteDir: "clauderech/snackbar"
+        remoteDir: "public_html"
