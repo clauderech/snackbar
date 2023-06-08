@@ -16,5 +16,5 @@ jobs:
         host: ${{ secrets.HOST }} 
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
-        localDir: "clauderech/snackbar"
+        localDir: "https://github.com/clauderech/snackbar.git"
         remoteDir: "home/public_html"
