@@ -13,8 +13,7 @@ jobs:
     - name: FTP Deploy Locaweb
       uses: locaweb/ftp-deploy@1.0.0
       with:
-        host: ${{ secrets.ftp.snackbartio.com.br }} 
-        user: ${{ secrets.snackbartio1 }}
+        host: ${{ secrets.HOST }} 
+        user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
-        localDir: "https://github.com/clauderech/snackbar"
-        remoteDir: "public_html"
+        
