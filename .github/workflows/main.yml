@@ -17,4 +17,4 @@ jobs:
         user: ${{ secrets.snackbartio1 }}
         password: ${{ secrets.PASS }}
         localDir: "https://github.com/clauderech/snackbar"
-        remoteDir: "home/public_html"
+        remoteDir: "public_html"
