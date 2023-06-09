@@ -112,7 +112,6 @@
 	}
 
 	.slides {
-		width: auto;
 		max-height: 180px;
 		display: flex;
 	}
