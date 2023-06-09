@@ -107,7 +107,7 @@
         </fieldset> 
         </form>
     </div>
-    <script src="js/menuRespon.js"></script>
+    <script src="js/menurespon.js"></script>
 </body>
 </html>
     

@@ -86,6 +86,6 @@
         </div>
 
         <script src="js/slide.js"></script>
-        <script src="js/menuRespon.js"></script>
+        <script src="js/menurespon.js"></script>
     </body>
 </html>
