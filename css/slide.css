@@ -102,3 +102,40 @@
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background-color: azure;
 }
+
+@media (max-width:400px) {
+	.slider {
+		margin-left: 2%;
+		width: auto;
+		max-width: 320px;
+		max-height: 180px;
+	}
+
+	.slides {
+		width: auto;
+		max-width: 320px;
+		max-height: 180px;
+		display: flex;
+	}
+
+	.slide img{
+		width: 320px;
+		height: 180px;
+	}
+
+	.manual-navigation{
+	    position: absolute;
+	    width: 320px;
+	    margin-top: -30px;
+	    display: flex;
+	    justify-content: center;
+	}
+
+	.navigation-auto{
+	    position: absolute;
+	    width: 320px;
+	    margin-top: 150px;
+	    display: flex;
+	    justify-content: center;
+	}
+}
