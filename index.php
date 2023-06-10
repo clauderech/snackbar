@@ -42,6 +42,12 @@
                 </div>
             </nav>
         </header> 
+        <div>
+            <h1>Snack Bar Lanches</h1>
+            <p>Bem vindo ao site do Snack Bar Lanches!<br><br>
+            Uma das melhores lancherias de Caxias Do Sul, para você pedir online ou também pode nos visitar.
+            </p>
+        </div>
         
         <div class="slider">
             <div class="slides">
