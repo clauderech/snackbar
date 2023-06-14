@@ -105,7 +105,7 @@
                         <li><b>E-mail:</b> contato@snackbartio.com.br</li>
                     </ul>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d13935.949502519297!2d-51.23675897345555!3d-29.165044270340495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x951ea25986f1eb3d%3A0xc937820f2488f7f6!2sR.%20Jo%C3%A3o%20Ven%C3%A2ncio%20Girardi%20-%20Cidade%20Nova%2C%20Caxias%20do%20Sul%20-%20RS%2C%2095112-235!3m2!1d-29.165063399999998!2d-51.226480699999996!5e0!3m2!1spt-BR!2sbr!4v1686692191573!5m2!1spt-BR!2sbr" width="360" height="360" style="border:0; border-radius:3px; margin-left: 5px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d13935.949502519297!2d-51.23675897345555!3d-29.165044270340495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x951ea25986f1eb3d%3A0xc937820f2488f7f6!2sR.%20Jo%C3%A3o%20Ven%C3%A2ncio%20Girardi%20-%20Cidade%20Nova%2C%20Caxias%20do%20Sul%20-%20RS%2C%2095112-235!3m2!1d-29.165063399999998!2d-51.226480699999996!5e0!3m2!1spt-BR!2sbr!4v1686692191573!5m2!1spt-BR!2sbr" width="350" height="360" style="border:0; border-radius:3px; margin-left: 5px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div><!-- Fim container -->
