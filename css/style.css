@@ -54,8 +54,7 @@ main {
     height: 700px;
     margin-left: 5%;
     border: 2px solid #CCC;
-    overflow-x: hidden;
-    overflow-y: scroll;
+   
 }
 
 .cardapio h2 {
@@ -72,6 +71,8 @@ main {
     height: auto;
     top: 2px;
     width: 496px;
+    height: 630px;
+    overflow-y: scroll;
     
 }
 
@@ -387,29 +388,28 @@ h3 {
     }
 
     main {
-        display: block;
         position: fixed;
         top: 181px;
         min-width: 280px;
         max-width: 380px;
-        width: 380px;
+        width: auto;
         margin: auto;
-        height: 650px;
+        height: 700px;
         
         
     }
 
     .categ {
-        width: 380px;
+        width: auto;
     }
 
     .cardapio {
-        position: absolute;
         top: 0px;
-        min-width: 280px;
+        min-width: 260px;
         max-width: 380px;
-        width: 380px;
+        width: auto;
         margin: auto;
+        height: 630px;
         
         
     }
@@ -428,7 +428,7 @@ h3 {
         position:fixed;
         left:100vw;
         right:0;
-        top:120;
+        top:120px;
         bottom:0;
         transition: all ease .2s;
     }
@@ -507,6 +507,7 @@ h3 {
       
     .itens{
         width: auto;
+        height: min-content;
     }
         
 }
@@ -522,7 +523,21 @@ h3 {
         width: 100vw;
     }
 
-   
+   .main {
+        position: fixed;
+        height: 500px;
+        width: 360px;
+        margin: 3px;
+        padding-left: 3px;
+        left: 0;
+   }
+
+   .cardapio {
+        height: 380px;
+        width: 360px;
+        margin-left: 3px;
+        padding: 0;
+   }
 
     .container {
         width: 100vw;
@@ -547,10 +562,15 @@ h3 {
     }
     
     main {
-        max-width: auto;
+        max-width: 280px;
+    }
+
+    .cardapio {
+        width: 280px;
+        margin-left: 0;
     }
     .itens {
-        max-width: auto;
+        width:270px;
     }
 
     
