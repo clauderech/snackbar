@@ -136,9 +136,9 @@
         <!-- modelos de categorias e itens na lista e no carrinho -->
     <div class="models">
         <div class="categ">
-            <hr>
+           
             <h2><div class="categ--name">--</div></h2>
-            <hr>
+           
         </div>
 
         <div class="itens">
@@ -212,7 +212,6 @@
     <!-- conteudo principal -->
     <main>
         <h2>Cardápio</h2>
-        
         <div class="cardapio"></div>
     </main>
     <!-- /conteudo principal -->

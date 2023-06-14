@@ -64,12 +64,11 @@ main {
 
 .cardapio {
     position: relative;
-    top: 181;
+    top: 0;
     margin: 181 auto auto auto;
-    padding: 5px 0px 0 0;
+    padding: 0;
     border: 2px solid #999;
     height: auto;
-    top: 2px;
     width: 496px;
     height: 630px;
     overflow-y: scroll;
@@ -399,10 +398,6 @@ h3 {
         
     }
 
-    .categ {
-        width: auto;
-    }
-
     .cardapio {
         top: 0px;
         min-width: 260px;
@@ -496,7 +491,14 @@ h3 {
 }
 
 @media (max-width:450px) {
+
+    header {
+        height: 140px;
+    }
     
+    .nav_pagina {
+        height: 40px;
+    }
 
    .menu-openner {
         font-size: 15px;
@@ -504,10 +506,45 @@ h3 {
         width: 60px;
     }
 
+    .main h2 {
+        font-size: 1rem;
+    }
+
+    .categ h2 {
+        font-size: 1rem;
+    }
+
+    .categ {
+        width: auto;
+        height: 23px;
+    }
       
     .itens{
         width: auto;
-        height: min-content;
+        height: 180px;
+    }
+
+    .item--name{
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    .item--preco{
+        margin-bottom: 0;
+        padding-bottom: -5;
+    }
+
+    .item--descr{
+        margin-top: 0px;
+    }
+
+    .item--add {
+        width:25px;
+        height:25px;
+        line-height:25px;
+        font-size: 15px;
+        margin-top: -25px;
+
     }
         
 }
