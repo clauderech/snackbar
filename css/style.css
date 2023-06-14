@@ -54,11 +54,19 @@ main {
     height: 700px;
     margin-left: 0;
     border: 2px solid #003840;
+    background-color: #FFF;
+}
+
+main h2{
+    padding: 10px 0 10px 0;
+    margin: 0;
+    background-color: #071f30;
+    color: #fb860a;
 }
 
 .cardapio h2 {
     text-align: center;
-    background-color: #315970;
+    background-color: #032234;
 }
 
 .cardapio {
@@ -99,13 +107,14 @@ h3 {
 .categ {
     margin-bottom: 10px;
     margin-top: 15px;
-    background-color: #003840;
-    height: 68px;
+    background-color: #abbbbd;
+    height: 50px;
 
 }
 
 .categ h2 {
     text-align: center;
+   
 }
 
 .categ--name {
