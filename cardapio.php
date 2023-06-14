@@ -21,6 +21,7 @@
             display: none;
             position: absolute;
             left: 10px;
+            margin-bottom: 10px;
             background: #f5f1f1;
             width: 36px;
             height: 28px;
@@ -39,13 +40,14 @@
             margin-left: 0;
             display: flex;
             position: fixed;
-            top: 125px;
+            top: 50px;
+            padding-top: 20px;
             height: 50px;
             width: 100%;
             text-align: left;
             background-color: #01282e;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 2px;
         }
 
         .nav_pagina .ul_pagina{
@@ -164,7 +166,7 @@
     </div>
     <!-- /models -->
 
-    <header>
+    <header style="height: 100px;">
         <div class="header-title">
             <!-- <img src="images/logo_snackbar1.png" class="logotipo"> --> 
             <h1>Snack Bar Lanches</h1>
@@ -178,6 +180,7 @@
                 <div></div>
             </div>
             <ul class="ul_pagina">
+                <li class="li_pagina" onclick="fecharMenuPagina()"><a class="nav-link-pagina" href="index.php">Home</a></li>
                 <li class="li_pagina" onclick="fecharMenuPagina()"><a class="nav-link-pagina" href="#Xis">Xis</a></li>
                 <li class="li_pagina" onclick="fecharMenuPagina()"><a class="nav-link-pagina" href="#Dogs">Dogs</a></li>
                 <li class="li_pagina" onclick="fecharMenuPagina()"><a class="nav-link-pagina" href="#Torradas">Torradas</a></li>
@@ -187,23 +190,7 @@
                 <li class="li_pagina" onclick="fecharMenuPagina()"><a class="nav-link-pagina" href="#Pizzas">Pizzas</a></li>
             </ul>
         </nav>
-                
-        <nav class="nav_site">            
-            <div class="menu_mobile_site" onclick=" menuSiteShow() ">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <ul class="ul_site">
-                <li class="li_site"><a class="nav-link" href="index.php">Home</a></li>
-            </ul>
-            <div class="user" style="display: flex;">
-                <div class="user_name" style="margin-top: 10%; color:aliceblue"><?php echo $nome; ?></div>
-                <img src="images/user.png" >
-            </div>
-        </nav>
-
-       
+               
     </header>
     <!-- /menu-openner --> 
 

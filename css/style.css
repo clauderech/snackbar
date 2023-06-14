@@ -44,17 +44,16 @@ aside.show {
 }
 
 main {
-    padding: 0 0 2px 0;
+    padding: 0;
     position: fixed;
-    top: 181;
+    top: 100;
     display: block;
     text-align: center;
     align-items:center;
     width: 500px;
     height: 700px;
-    margin-left: 5%;
-    border: 2px solid #CCC;
-   
+    margin-left: 0;
+       
 }
 
 .cardapio h2 {
@@ -65,9 +64,8 @@ main {
 .cardapio {
     position: relative;
     top: 0;
-    margin: 181 auto auto auto;
+    margin: 181 auto auto 0;
     padding: 0;
-    border: 2px solid #999;
     height: auto;
     width: 496px;
     height: 630px;
@@ -387,15 +385,11 @@ h3 {
     }
 
     main {
-        position: fixed;
-        top: 181px;
         min-width: 280px;
         max-width: 380px;
         width: auto;
         margin: auto;
-        height: 700px;
-        
-        
+            
     }
 
     .cardapio {
@@ -561,18 +555,17 @@ h3 {
     }
 
    .main {
-        position: fixed;
         height: 500px;
         width: 360px;
-        margin: 3px;
-        padding-left: 3px;
+        margin: auto;
+        padding-left: auto;
         left: 0;
    }
 
    .cardapio {
-        height: 380px;
+        height: 450px;
         width: 360px;
-        margin-left: 3px;
+        margin-left: auto;
         padding: 0;
    }
 
@@ -609,11 +602,6 @@ h3 {
     .itens {
         width:270px;
     }
-
-    
-
-
-
 }
 
 

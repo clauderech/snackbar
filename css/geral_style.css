@@ -4,7 +4,7 @@
 }
 
 body {
-    margin: 181px 0 0 0;
+    margin: 100px 0 0 0;
     background-color:#640404;
     font-family:'Lato', Helvetica, Arial;
     font-size:15px;
@@ -21,7 +21,7 @@ header {
     top:0;
     right:0;
     width: 100vw;
-    height:180px;
+    height:100px;
     padding: 0 10px 0 0px;
     background-color:#03242e;
     display:block; /* none; */
