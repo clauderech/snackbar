@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="css/geral_style.css" />
     <style>
         .form_login {
-            margin-top: 300px;
-            margin-left: 30%;
+            position: relative;
+            top:200px;
+            margin: 200px auto auto auto;
+            align-items: center;
             max-width: 400px;
            
         }
@@ -23,7 +25,7 @@
             float:right;
             margin-top: 10px;
             margin-left: 5px;
-            width: 300px;
+            width: 250px;
         }
 
         #formlogin label {
@@ -38,30 +40,43 @@
             padding-bottom: 10px;
         }
 
+        #fie div{
+            display: block;
+        }
+
         #formlogin #submit {
+            width: 100%;
             background-color:chartreuse;
             border-radius: 20px;
         }
 
+        #formlogin #submit:hover{
+            background-color:darkseagreen;
+            cursor: pointer;
+
+        }
+
         @media (max-width:600px) {
             .form_login {
-                margin-left: 50px;
+                position: relative;
+                top: 200px;
+                margin: auto;
+                max-width: 360;
             }
         }
 
-        @media (max-width:380px) {
+        @media (max-width:280px) {
             #formlogin input{
-            float:right;
-            margin-top: 10px;
-            margin-left: 5px;
-            width: 200px;
-            margin-right: 20px;
+                float:left;
+                margin-top: 10px;
+                max-width: 220px;
+                
             }
 
-            .form_login {
-            margin-top: 200px;
-            margin-left: 10%;
-            max-width: 300px;
+            
+            #fie {
+                margin: auto;
+                width: auto;
             }
             
         }
@@ -76,20 +91,17 @@
             <!-- <div class="menu-openner"><span>0</span>🛒</div> -->
         </div>
                 
-        <nav>            
-            <div class="menu_mobile" onclick=" menuShow() ">
+        <nav class="nav_site">            
+            <div class="menu_mobile_site" onclick=" menuSiteShow() ">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <ul>
-                <li><a class="nav-link" href="index.php">Home</a></li>
-                <li><a class="nav-link" href="cadastro.php">Cadastro</a></li>
+            <ul class="ul_site">
+                <li class="li_site"><a class="nav-link-site" href="index.php">Home</a></li>
+                <li class="li_site"><a class="nav-link-site" href="cadastro.php">Cadastro</a></li>
             </ul>
-            <div class="user" style="display: flex;">
-                <div class="user_name" style="margin-top: 10%; color:aliceblue"><?php //echo $_SESSION['login']; ?></div>
-                <img src="images/user.png" >
-            </div>
+            
         </nav>
     </header>  
     
@@ -99,10 +111,14 @@
         <form method="post" action="verifica_login.php" id="formlogin" name="formlogin" >
         <fieldset id="fie">
             <legend>LOGIN</legend><br />
-            <label>@EMAIL :</label>
-            <input type="text" name="login" id="login"  /><br />
-            <label>SENHA :</label>
-            <input type="password" name="senha" id="senha" /><br />
+            <div>
+                <label>@EMAIL :</label>
+                <input type="text" name="login" id="login"  />
+            </div><br />
+            <div>
+                <label>SENHA :</label>
+                <input type="password" name="senha" id="senha" />
+            </div><br />
             <input type="submit" id="submit" value="LOGAR   "   />
         </fieldset> 
         </form>

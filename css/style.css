@@ -44,23 +44,42 @@ aside.show {
 }
 
 main {
-    flex:1;
-    padding:20px;
-    margin-top:60px;
-    overflow-y:auto;
+    padding: 0 0 2px 0;
+    position: fixed;
+    top: 181;
+    display: block;
+    text-align: center;
+    align-items:center;
+    width: 500px;
+    height: 700px;
+    margin-left: 5%;
+    border: 2px solid #CCC;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
+.cardapio h2 {
+    text-align: center;
+    background-color: #315970;
+}
 
+.cardapio {
+    position: relative;
+    top: 181;
+    margin: 181 auto auto auto;
+    padding: 5px 0px 0 0;
+    border: 2px solid #999;
+    height: auto;
+    top: 2px;
+    width: 496px;
+    
+}
 
 h1, h2 {
     font-family:'Hepta Slab', Helvetica, Arial;
     color: darkorange;
 }
 
-.cardapio {
-    display:grid;
-    grid-template-columns: repeat(1, 1fr);
-}
 
 h3 {
     color: #CCC;
@@ -71,14 +90,20 @@ h3 {
 
 .itens {
     text-align: center;
-    max-width:400px;
+    width:400px;
     font-family:'Hepta Slab', Helvetica, Arial;
-    margin:0 auto 50px auto;
-
+    margin:auto auto 5px auto;
+    border: 5px ridge #003840;
+    background-color: #CCC;
+    color: #f88316;
 }
 
 .categ {
-    margin-left: 0%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    background-color: #003840;
+    height: 68px;
+
 }
 
 .categ h2 {
@@ -103,35 +128,36 @@ h3 {
     height:50px;
     line-height:50px;
     border-radius:25px;
-    background-color:#d32f2f;
+    background-color:#04314e;
     text-align:center;
     color:#FFF;
     font-size:22px;
     cursor:pointer;
     margin-top:-25px;
     transition:all ease .2s;
+    margin-bottom: 5px;
 }
 
-.itens a:hover .pizza-item--add {
-    background-color:#b71c1c;
+.itens a:hover .item--add {
+    background-color:#1659bd;
 }
 
 .item--preco {
     font-size:15px;
-    color:#eee7e7;
+    color:#064286;
     margin-top:5px;
 }
 
 .item--name {
     font-size:20px;
     font-weight: bold;
-    color:#f0ebeb;
+    color:#03313f;
     margin-top:5px
 }
 
 .item--descr {
     font-size:13px;
-    color:#faf8f8;
+    color:#1f569e;
     margin-top:10px;
 }
 
@@ -348,34 +374,55 @@ h3 {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    main {
-        padding-top:60px;
-        max-width: 600px;
-    }
-
-    .cardapio {
-        padding-left: 0px;
-    }
+    .container {
+        width: 100vw;
+        overflow-y: scroll;
+    }   
 }
 
 @media (max-width:840px) {
     body {
         flex-direction: column;
+        overflow: auto;
     }
+
+    main {
+        display: block;
+        position: fixed;
+        top: 181px;
+        min-width: 280px;
+        max-width: 380px;
+        width: 380px;
+        margin: auto;
+        height: 650px;
+        
+        
+    }
+
+    .categ {
+        width: 380px;
+    }
+
+    .cardapio {
+        position: absolute;
+        top: 0px;
+        min-width: 280px;
+        max-width: 380px;
+        width: 380px;
+        margin: auto;
+        
+        
+    }
+   
     .item-area {
         display:block;
     }
     .itens {
-        max-width: 400px;
+        max-width: 380px;
     }
 
       
-    main {
-        padding-top:60px;
-        margin-left: 100px;
-    }
-    
-    
+       
     aside {
         width:auto;
         position:fixed;
@@ -449,40 +496,67 @@ h3 {
 }
 
 @media (max-width:450px) {
-    header h1 {
-        font-size: 1.5rem; 
-    }  
-        
+    
+
    .menu-openner {
         font-size: 15px;
         padding: 5px 10px;
         width: 60px;
     }
 
-    main {
-        max-width: 450px;
-        margin-left: 0;
+      
+    .itens{
+        width: auto;
     }
-
-    
+        
 }
 
-@media (max-width:380px) {
-    header h1 {
-        font-size: 1rem;
-    }
+@media (max-width:393px) {
     .menu-openner {
         font-size: 15px;
         width: 60px;
         padding: 5px 10px;
     }
 
-    main {
-        max-width: 380px;
-        margin-left: 0;
+    .contato {
+        width: 100vw;
+    }
+
+   
+
+    .container {
+        width: 100vw;
+        overflow-y: scroll;
     }
 
     
+
+    .itens {
+        margin-left: 2px;
+        font-size: 14px;
+        width: 350px;
+        
+    }
+
+    
+}
+
+@media (max-width:300px) {
+    .models {
+        width: auto;
+    }
+    
+    main {
+        max-width: auto;
+    }
+    .itens {
+        max-width: auto;
+    }
+
+    
+
+
+
 }
 
 

@@ -4,16 +4,15 @@
 }
 
 body {
+    margin: 181px 0 0 0;
     background-color:#640404;
     font-family:'Lato', Helvetica, Arial;
-    display:flex;
     font-size:15px;
-    margin:0;
-    min-height:100vh;
 }
 
 .models{
     display: none;
+   
 }
 
 header {
@@ -22,8 +21,8 @@ header {
     top:0;
     right:0;
     width: 100vw;
-    height:130px;
-    padding: 0 20px 0 20px;
+    height:180px;
+    padding: 0 10px 0 0px;
     background-color:#03242e;
     display:block; /* none; */
     align-items: center;
@@ -32,6 +31,7 @@ header {
 header  {
     margin-left: 0;
     color: #fff;
+    z-index: 1;
 }
 
 header .header-title {
@@ -43,15 +43,17 @@ header .header-title {
 }
 
 
-.menu_mobile {
+.menu_mobile_site {
     display: none;
+    position: absolute;
+    left: 10px;
     background: #f5f1f1;
     width: 36px;
     height: 28px;
     border-radius: 2px;    
 }
 
-.menu_mobile div{
+.menu_mobile_site div{
     width: 24px;
     height: 1px;
     background: #021013;
@@ -59,31 +61,37 @@ header .header-title {
     border-radius: 2px;
 }
 
-nav {
-    top: 61;
+.nav_site {
+    top: 0px;
     margin-left: 0;
-    position: fixed;
+    position: relative;
     display: flex;
     height: 60px;
-    width: 96vw;
+    width: 100%;
     background-color: #01282e;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px 0 20px;
+    padding: 0 2px 0 2px;
     flex-wrap: wrap;
 }
 
-nav ul{
+.nav_site .ul_site{
+    position: relative;
+    top:0px;
+    margin-left: 0;
+    text-align: left;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
 
-nav ul li{
+.nav_site .ul_site .li_site{
     margin: 0 5px;
+    
 }
 
-nav ul li a{
+
+.nav_site .ul_site .li_site a{
     color: #f2f2f2;
     text-decoration: none;
     font-size: 18px;
@@ -94,36 +102,118 @@ nav ul li a{
     transition: all 0.3s ease;
 }
 
-nav ul li a.active,
-nav ul li a:hover{
+.nav_site .ul_site .li_site a.active,
+.nav_site .ul_site .li_site a:hover{
     background: #f88f06;
 }
 
+.user {
+    position: absolute;
+    left: 70%;
+}
+
+.container{
+    display: flex;
+    width: 1200px;
+}
+
+.hello{
+    margin-left: 5px;
+}
+
+.hello p {
+    color: azure;
+    letter-spacing: 1px;
+}
+
+.hello a {
+    font-weight:800;
+    font-size: 18px;
+    background-color: rgb(102, 206, 5);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(2, 28, 9);
+    border: 2px solid #16cb25;
+    padding: 2px 2px;
+    margin: 2px 0 2px 0;
+
+}
+
+.hello a:hover{
+    background-color: #aff644;
+}
+
+.contato{
+    display: flex;
+    width: 680px;
+    margin: 5px 5px 5px 5px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    background-color: rgba(216, 40, 49, 0.667);
+    border-radius: 2px;
+
+}
+
+.contato p {
+    margin-left: 15px;
+    color: #d2d8c6;
+    letter-spacing: 1px;
+}
+
+.ul_contato {
+    padding: 5px 0 5px 30;
+    list-style: none;
+}
+
+.ul_contato li{
+    color: #d2d8c6;
+    letter-spacing: 1px;
+}
+
+
+
 @media (max-width:900px) {
 
-    .menu_mobile{
+    header {
+        padding: 0;
+        margin: 0;
+    }
+    
+    header h1 {
+        font-size: 1rem; 
+    }
+    
+    
+        
+    .nav_site{
+        padding: 0;
+    }
+
+    .menu_mobile_site{
         display: block;
     }
 
-    
-    nav h1 {
-        font-size: 16px;
-    }
-
-    nav ul.open{
+    .nav_site .ul_site.open{
         left: 0;
-    }
-
-    nav ul li a {
+        position: relative;
+        z-index: 1;
         width: 100%;
-        margin: 50px;
+        height: 100vh;
     }
 
-    nav ul{
-        margin-top: 0;
-        position: fixed;
-        top: 119px;
+    .nav_site .ul_site .li_site a {
+
+        top: 10px;
+        padding: 5 0 5 0;
+        width: 100%;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .nav_site .ul_site{
+        position: relative;
         left: -100%;
+        top: 45px;
         background-color: #003840;
         height: 100vw;
         width: 100%;
@@ -133,13 +223,27 @@ nav ul li a:hover{
         overflow-y: auto;
     }
 
-    nav ul li a{
-        font-size: 23px;
-    }
-
-    nav ul li a.active,
-    nav ul li a:hover{
+    .nav_site .ul_site .li_site a.active,
+    .nav_site .ul_site .li_site a:hover{
         background: none;
         color: #f88f06;
     }
+
+    
 }
+
+@media (max-width:795px){
+    .contato {
+        display: block;
+        width: 680px;
+    }
+}
+
+
+@media (max-width:1400px) {
+    .container{
+        display: block;
+    }
+}
+
+

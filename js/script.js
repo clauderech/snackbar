@@ -284,10 +284,14 @@ produtos.map((item, index) => {
                
     //clonar a area de modelo para as categorias
     let categ = document.querySelector('.models .categ').cloneNode(true)
+    categ.id = categoria
     //definir o local onde vai inserir os modelos das categorias
     document.querySelector('.cardapio').append(categ)
     //preencher os modelos com os dados das categorias
     categ.querySelector('.categ .categ--name').innerHTML = categoria
+    //clonar o menu da pagina
+    //let menu_pagina = document.querySelector('.models .nav_pagina').cloneNode(true)
+    //document.querySelector('.cardapio').append(menu_pagina)
     //mapear os itens de acordo com o indice das categoria
     item.map((xitem, xindex) => {
         //clonar a area de modelo para os itens

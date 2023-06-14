@@ -8,39 +8,42 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/geral_style.css" /> 
         <style>
-                #form_client input {
-                    float:right;
-                    padding-top: 10px;
-                    margin-left: 10px;
-                    margin-top: 10px;
-                    width: 300px;
-                }
-
-                #form_client label {
-                    display: inline;
-                    color: #ffff;
-                    float: left;
-                    left: 15px;
-                    padding: 10px 0px 0px 5px;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
+                body
+                #form_client div {
+                    display: block;
+                    padding: 0 5px 0 5px;
+                    width: 350px;
+                    color: azure;
                 }
 
                 .container {
-                    margin-top: 70px;
-                    margin-left: 15%;
+                    margin: auto;
+                    align-items: center ;
                     max-width: 380px;
                 }
 
+                #form_client div input{
+                    float: right;
+                }
+
+                .cadast_enviar{
+                    width: 100%;
+                    border-radius: 10px;
+                    background-color:chartreuse ;
+                    font-size: 18px;                   
+                }
+
+                
+
                 @media (max-width: 450px) {
                     .container {
-                    margin-top: 120px;
+                    margin-top: 50px;
                     margin-left: 2px;
-                    max-width: 350px;
+                    max-width: 100%px;
                     }
 
                     #form_client input {
-                        width: 270px;
+                        width: 250px;
                     }
                 }
 
@@ -53,34 +56,34 @@
         <!-- <img src="images/logo_snackbar1.png" class="logotipo"> --> 
         <h1>Snack Bar Lanches</h1>
         <!-- <div class="menu-openner"><span>0</span>🛒</div> -->
-        </header>
         <!-- /menu-openner --> 
-        <nav>
-            <div class="menu_mobile" onclick=" menuShow() ">
+        <nav class="nav_site">
+            <div class="menu_mobile_site" onclick=" menuSiteShow() ">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="login.php">Entrar</a></li>
+            <ul class="ul_site">
+                <li class="li_site"><a href="index.php">Home</a></li>
+                <li class="li_site"><a href="login.php">Entrar</a></li>
             </ul>
             <div class="user" style="display: flex;">
                 <div style="margin-top: 20%; color:aliceblue">user</div>
                 <img src="images/user.png" >
             </div>
-        </nav>  
+        </nav>
+    </header>  
         
         <div class="container">
             <div class="cadastro">
                 <h1>Cadastro</h1>
                 <div class="dados_cliente">
-                    <h3>Seus Dados</h3>
+                    <h3>Seus Dados:</h3>
                     <form action="registra_user.php" id="form_client" method="post">
                         <div>
                             <label for="nome">Nome: *</label>
                             <input type="text" name="nome" id="nome" required />
-                        </div>
+                        </div><br>
 
                         <div>
                             <label for="fone">Fone: *</label>
@@ -113,7 +116,7 @@
                         </div><br />
 
                         <div>
-                            <input type="submit" class="cart--finalizar" id="enviar" value="Enviar Pedido">
+                            <input type="submit" class="cadast_enviar" id="enviar" value="Enviar">
                         </div>
                     </form>
                 </div> <!--dados_cliente -->
