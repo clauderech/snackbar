@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/geral_style.css" /> 
         <style>
-                body
+               
                 #form_client div {
                     display: block;
                     padding: 0 5px 0 5px;
@@ -16,11 +16,12 @@
                     color: azure;
                 }
 
-                .container {
-                    margin: auto;
-                    align-items: center ;
-                    max-width: 380px;
+                .cadastro {
+                    position: fixed;
+                    top: 30%;
+                    left: 30%;
                 }
+  
 
                 #form_client div input{
                     float: right;
@@ -35,11 +36,9 @@
 
                 
 
-                @media (max-width: 450px) {
-                    .container {
-                    margin-top: 50px;
-                    margin-left: 2px;
-                    max-width: 100%px;
+                @media (max-width: 650px) {
+                    .cadastro{
+                        left: 5px;
                     }
 
                     #form_client input {
@@ -74,55 +73,53 @@
         </nav>
     </header>  
         
-        <div class="container">
-            <div class="cadastro">
-                <h1>Cadastro</h1>
-                <div class="dados_cliente">
-                    <h3>Seus Dados:</h3>
-                    <form action="registra_user.php" id="form_client" method="post">
-                        <div>
-                            <label for="nome">Nome: *</label>
-                            <input type="text" name="nome" id="nome" required />
-                        </div><br>
+        <div class="cadastro">
+            <h1>Cadastro</h1>
+            <div class="dados_cliente">
+                <h3>Seus Dados:</h3>
+                <form action="registra_user.php" id="form_client" method="post">
+                    <div>
+                        <label for="nome">Nome: *</label>
+                        <input type="text" name="nome" id="nome" required />
+                    </div><br>
 
-                        <div>
-                            <label for="fone">Fone: *</label>
-                            <input type="text" name="fone" id="fone" required />
-                        </div><br />
+                    <div>
+                        <label for="fone">Fone: *</label>
+                        <input type="text" name="fone" id="fone" required />
+                    </div><br />
 
-                        <div>
-                            <label for="bairro">Bairro:</label>
-                            <input type="text" name="bairro" id="bairro" />
-                        </div><br />
+                    <div>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro" />
+                    </div><br />
 
-                        <div>
-                            <label for="rua">Rua:</label>
-                            <input type="text" name="rua" id="rua" />
-                        </div><br />
+                    <div>
+                        <label for="rua">Rua:</label>
+                        <input type="text" name="rua" id="rua" />
+                    </div><br />
 
-                        <div>
-                            <label for="numero">Numero:</label>
-                            <input type="text" name="numero" id="numero" />
-                        </div><br />
+                    <div>
+                        <label for="numero">Numero:</label>
+                        <input type="text" name="numero" id="numero" />
+                    </div><br />
 
-                        <div>
-                            <label for="email">e-mail: *</label>
-                            <input type="email" name="email" id="email" required />
-                        </div><br />
+                    <div>
+                        <label for="email">e-mail: *</label>
+                        <input type="email" name="email" id="email" required />
+                    </div><br />
 
-                        <div>
-                            <label for="password">Password *</label>
-                            <input type="password" name="password" id="password" required />
-                        </div><br />
+                    <div>
+                        <label for="password">Password *</label>
+                        <input type="password" name="password" id="password" required />
+                    </div><br />
 
-                        <div>
-                            <input type="submit" class="cadast_enviar" id="enviar" value="Enviar">
-                        </div>
-                    </form>
-                </div> <!--dados_cliente -->
-            </div><!--finalizar -->
-        </div> <!--conatainer-->
+                    <div>
+                        <input type="submit" class="cadast_enviar" id="enviar" value="Enviar">
+                    </div>
+                </form>
+            </div> <!--dados_cliente -->
+        </div><!--finalizar -->
+    
         <script src="js/menurespon.js"></script>
-        <script src="js/cadastro.js"></script>
     </body>
 </html>

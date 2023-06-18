@@ -16,6 +16,8 @@
     $senha = $dados_client['password'];
     $email_exist = 'N/A';
     $id_cliente = 'N/A';
+
+    require('envia_email.php'); 
     
     //Verificar se ja existe o cliente registrado
     $stmtcli = $conn->query( "SELECT id_cliente, email FROM clientes WHERE email = '$email'" );
@@ -39,3 +41,5 @@
     }   
    
 ?>
+
+

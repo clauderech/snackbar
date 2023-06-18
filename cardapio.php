@@ -1,5 +1,5 @@
 <?php
-    $nome = 'user';
+    $nome = 'login';
     session_start();
     if(isset($_SESSION['nome']))
         $nome = $_SESSION['nome'];
@@ -52,7 +52,7 @@
 
         .nav_pagina .ul_pagina{
             margin: 0;
-            width: auto;
+            width: 95vw;
             height: 100%;
             text-align: left;
             align-items: left;
@@ -81,6 +81,19 @@
         .nav_pagina .ul_pagina .li_pagina a.active,
         .nav_pagina .ul_pagina .li_pagina a:hover{
             background: #f88f06;
+        }
+
+        .user {
+            position: relative;
+            margin-right: 5vw;
+            left: 0;
+            width: auto;
+            padding: 3px 3px;
+            margin-top: -18px;
+        }
+
+        .user .user_name{
+            padding: 10px 5px 0 0;
         }
 
         @media (max-width:900px) {
@@ -166,7 +179,7 @@
     </div>
     <!-- /models -->
 
-    <header style="height: 100px;">
+    <header>
         <div class="header-title">
             <!-- <img src="images/logo_snackbar1.png" class="logotipo"> --> 
             <h1>Snack Bar Lanches</h1>
@@ -189,6 +202,10 @@
                 <li class="li_pagina" onclick="fecharMenuPagina()"><a class="nav-link-pagina" href="#Picados">Picados</a></li>
                 <li class="li_pagina" onclick="fecharMenuPagina()"><a class="nav-link-pagina" href="#Pizzas">Pizzas</a></li>
             </ul>
+            <div class="user" style="display: flex;">
+                    <div class="user_name" style="margin-top: 10%; color:aliceblue"><?php echo $nome; ?></div>
+                    <img src="images/user.png" >
+            </div>
         </nav>
                
     </header>

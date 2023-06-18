@@ -43,8 +43,12 @@
             }
             echo "Tudo certo!\nLogo retornamos para confirmar seu pedido.";
         } catch (Exception $e) {
-            echo 'Exceção capturada: ' . var_dump($dados_pedido),  $e->getMessage(), "\n";
+            echo 'Houve um erro:';
+            echo 'Exceção capturada: ' . $e->getMessage(), "\n";
         }
+
+    }else{
+        echo "Desculpe!\n\nVocê precisa estar logado, para fazer um pedido.";
     }
    
 ?>

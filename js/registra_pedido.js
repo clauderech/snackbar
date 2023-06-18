@@ -19,8 +19,8 @@ $(document).ready(() => {
 				//var alerta = "<div style='top:300px'>"
 				alert(resultado)
 				//alerta += "</div>"
-				sessionStorage.clear()
-				window.location.href = "index.php"
+				//sessionStorage.clear()
+				//window.location.href = "index.php"
 				//window.location.reload(true);
 			}
 		});

@@ -426,7 +426,7 @@ h3 {
         position:fixed;
         left:100vw;
         right:0;
-        top:120px;
+        top:100px;
         bottom:0;
         transition: all ease .2s;
     }
@@ -434,6 +434,7 @@ h3 {
     aside.show {
         width: auto;
         left: 0;
+        z-index: 1;
     }
     
     .cart--area {

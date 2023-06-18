@@ -121,7 +121,7 @@ const adicionarNocarrinho = () => {
             }
             cart.push(item)
             //Salva os dados do carrinho em sessionStorage.
-            cartTextSet = JSON.stringify(cart)
+            let cartTextSet = JSON.stringify(cart)
             sessionStorage.setItem('cart_save', cartTextSet)
             //console.log(item)
             //console.log('Sub total R$ ' + (item.qt * item.price).toFixed(2))
@@ -233,9 +233,14 @@ const atualizarCarrinho = () => {
                 } else {
                     // remover se for zero
                     cart.splice(i, 1)
+                    //Salva os dados do carrinho em sessionStorage.
+                    let cartTextSet = JSON.stringify(cart)
+                    sessionStorage.setItem('cart_save', cartTextSet)
                 }
                                 
-                (cart.length < 1) ? seleciona('.header').style.display = 'flex' : ''
+                (cart.length < 1) ? seleciona('header').style.display = 'block' : ''
+
+                
 
                 // atualizar a quantidade
                 atualizarCarrinho()
