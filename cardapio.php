@@ -86,7 +86,7 @@
         .user {
             position: relative;
             margin-right: 5vw;
-            left: 0;
+            left: 70vw;
             width: auto;
             padding: 3px 3px;
             margin-top: -18px;
@@ -99,7 +99,7 @@
         @media (max-width:900px) {
 
             .nav_pagina {
-                width: auto;
+                width: 100%;
             }
 
             .menu_mobile_pagina{

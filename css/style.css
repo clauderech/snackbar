@@ -71,7 +71,7 @@ main h2{
 
 .cardapio {
     position: relative;
-    top: 0;
+    top: 0px;
     margin: 181 auto auto 0;
     padding: 0;
     height: auto;
@@ -98,15 +98,16 @@ h3 {
     text-align: center;
     width:400px;
     font-family:'Hepta Slab', Helvetica, Arial;
-    margin:auto auto 5px auto;
+    margin:5px auto 5px auto;
     border: 5px ridge #003840;
     background-color: #CCC;
     color: #f88316;
 }
 
 .categ {
-    margin-bottom: 10px;
-    margin-top: 15px;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
     background-color: #abbbbd;
     height: 50px;
 
