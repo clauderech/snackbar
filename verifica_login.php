@@ -25,7 +25,7 @@
         $_SESSION['nome'] = $nome;
         $_SESSION['id_cliente'] = $id;
         
-        header('location:index.php');
+        header('location:cardapio.php');
     }
     else {
         unset ($_SESSION['login']);
